@@ -27,6 +27,7 @@ footer {
     margin-left: 20rem;
     margin-top: 2rem;
 }
+
 .navbar-f {
     display: inline;
     padding: 30px;
@@ -415,6 +416,34 @@ hr {
     margin: auto;
     margin-right: 3rem;
 }
-.media{
+
+.media {
     padding: 5px;
+}
+
+.allProducts {
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #6C584C;
+    text-align: center;
+}
+
+#load-more {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #274C5B;
+    transition: .3s;
+}
+
+#load-more:hover {
+    color: #274C5B;
+    background-color: #fff;
+    border: 1px solid #274C5B;
+    text-decoration: none;
 }
