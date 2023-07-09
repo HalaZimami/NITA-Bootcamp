@@ -3,13 +3,30 @@
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.064);
     box-shadow: 1px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
 }
 .c-product{
     display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    width: 100%;
 }
 .options{
     display: flex;
 }
 .delete, .wishList{
     padding: 0px 8px 0px 8px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c-desc{
+    width: 75%;
+}
+.pic-c{
+    margin-top: 10px;
 }
