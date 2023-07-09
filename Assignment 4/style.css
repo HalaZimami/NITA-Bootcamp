@@ -24,13 +24,13 @@ footer {
 .footer-m {
     display: flex;
     justify-content: space-around;
-    margin-left: 20rem;
+    margin-left: 15rem;
     margin-top: 2rem;
 }
 
 .navbar-f {
     display: inline;
-    padding: 30px;
+    padding: 20px;
     font-weight: normal;
     color: #000000;
 }
@@ -42,18 +42,17 @@ footer {
 
 .navbar-h {
     display: inline;
-    padding: 30px;
+    padding: 15px;
     font-weight: bold;
     color: #000000;
 }
 
 .menu {
-    margin-right: 100px;
     margin-top: 20px;
 }
 
 .icons {
-    flex: 5;
+    flex: 3;
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
@@ -109,6 +108,7 @@ input {
 .pheader {
     margin-top: 10px;
     text-align: left;
+    color: black;
 }
 
 .icons2 {

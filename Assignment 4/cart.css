@@ -1,0 +1,15 @@
+.container-c{
+    width: 80%;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    box-shadow: 1px;
+}
+.c-product{
+    display: flex;
+}
+.options{
+    display: flex;
+}
+.delete, .wishList{
+    padding: 0px 8px 0px 8px;
+}

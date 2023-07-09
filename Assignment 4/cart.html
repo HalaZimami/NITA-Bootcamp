@@ -1,88 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="loadMore.css">
+    <link rel="stylesheet" href="loadMore.css" />
+    <link rel="stylesheet" href="cart.css" />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="Logo.png" alt="logo" width="300px" width="318" height="83">
-        <nav class="menu">
-            <ul>
-                <a href="home.html">
-                    <li class="navbar-h">Home</li>
-                </a>
-                <li class="navbar-h">Shop</li>
-                <li class="navbar-h">Services</li>
-            </ul>
-        </nav>
+      <img
+        class="logo"
+        src="Logo.png"
+        alt="logo"
+        width="300px"
+        width="318"
+        height="83"
+      />
+      <nav class="menu">
+        <ul>
+          <a href="home.html">
+            <li class="navbar-h">Home</li>
+          </a>
+          <a href="products.html"><li class="navbar-h">Shop</li></a>
+          <li class="navbar-h">Services</li>
+        </ul>
+      </nav>
 
-        <div class="icons">
-            <div class="search">
-                <input type="search" placeholder="  search">
-                <img src="search.png" alt="search" class="searchimg">
-            </div>
-
-            <div class="icons2">
-                <div class="cart shopping">
-                    <img class="cartimg" src="cart.png" alt="cart" width="33" height="33">
-                    <p class="pheader">Cart(<span class="quantity">0</span>)
-                    </p>
-                </div>
-                <div class="profile" width="113" height="20px">
-                    <img src="profile.png" alt="cart" width="38" height="38">
-                    <p class="pheader">Profile</p>
-                </div>
-            </div>
+      <div class="icons">
+        <div class="search">
+          <input type="search" placeholder="  search" />
+          <img src="search.png" alt="search" class="searchimg" />
         </div>
+
+        <div class="icons2">
+          <a href=""
+            ><div class="cart shopping">
+              <img
+                class="cartimg"
+                src="cart.png"
+                alt="cart"
+                width="33"
+                height="33"
+              />
+              <p class="pheader">Cart(<span class="quantity">0</span>)</p>
+            </div></a
+          >
+          <div class="profile" width="113" height="20px">
+            <img src="profile.png" alt="cart" width="38" height="38" />
+            <p class="pheader">Profile</p>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- ---------------------------------------------------------------------------------------------------------->
-    
-    <div class="cartc"><!--card-->
-        <h1>Card</h1>
-        <ul class="listCard">
-        </ul>
-        <div class="checkOut">
-            <div class="total">0</div>
+
+    <!-- <div class="cartc">
+      card-->
+    <!-- <h1>Card</h1>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+        <div class="total">0</div>
+      </div>
+    </div> -->
+
+    <div class="container-c">
+      <h1>Your cart</h1>
+      <div class="c-product">
+        <img src="product.png" alt="product" class="pic-c" width="200px" height="200px" />
+        <div class="c-desc">
+          <h1>Arabica Coffee Beans</h1>
+          <img src="Star-products.png" alt="" class="star-c" />
+          <p class="c-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In officia
+            deleniti reprehenderit nihil eius dicta ex laborum magni beatae
+            praesentium, veritatis quasi explicabo laudantium. Pariatur vel
+            molestiae labore atque repellat.
+          </p>
+          <div class="options">
+            <p class="delete" style="color: red;">Delete</p><p>|</p>
+            <p class="wishList" style="color: blue;">Add to wish list</p>
+          </div>
         </div>
+        <div class="right-side">
+          <p class="quan">Quantity 5</p>
+          <p class="price1">$13</p>
+        </div>
+      </div>
     </div>
 
     <!-- ---------------------------------------------------------------------------------------------------------->
     <footer>
-        <div class="footer-set">
-            <img class="footer-logo" src="footer-logo.png" alt="logo" height="100">
-            <nav class="footer-m">
-                <ul class="navbar">
-                    <li class="navbar-f">About Us</li>
-                    <li class="navbar-f">Contact Us</li>
-                    <li class="navbar-f">Policy & Privacy</li>
-                </ul>
-            </nav>
+      <div class="footer-set">
+        <img
+          class="footer-logo"
+          src="footer-logo.png"
+          alt="logo"
+          height="100"
+        />
+        <nav class="footer-m">
+          <ul class="navbar">
+            <li class="navbar-f">About Us</li>
+            <li class="navbar-f">Contact Us</li>
+            <li class="navbar-f">Policy & Privacy</li>
+          </ul>
+        </nav>
 
-            <div class="icons-footer">
-                <img class="media" src="instagram.png" alt="">
-                <img class="media" src="facebook.png" alt="">
-                <img class="media" src="twitter.png" alt="">
-                <img class="media" src="pintrest.png" alt="">
-            </div>
+        <div class="icons-footer">
+          <img class="media" src="instagram.png" alt="" />
+          <img class="media" src="facebook.png" alt="" />
+          <img class="media" src="twitter.png" alt="" />
+          <img class="media" src="pintrest.png" alt="" />
         </div>
+      </div>
     </footer>
     <script src="cart.js"></script>
-</body>
-
+  </body>
 </html>
