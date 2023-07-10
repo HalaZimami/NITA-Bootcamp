@@ -12,10 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
         rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/loadMore.css">
-    <link rel="stylesheet" href="css/cart.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/loadMore.css">
+        <link rel="stylesheet" href="css/cart.css">
 
     <title>Document</title>
 </head>
@@ -55,8 +55,9 @@
             </div>
         </div>
     </header>
+    <br>
     <!-- ---------------------------------------------------------------------------------------------------------->
-    <section>
+    <section class="all">
         <div class="container">
             <p class="title-products"><span class="shop">Shop</span><br>All products</p>
 
@@ -64,12 +65,8 @@
 
             </div>
         </div>
-
-
-
         <a href="#" id="loadMore">Load More</a>
-
-    </section>
+    
 
     <div class="cart-c">
         <h1>Card</h1>
@@ -81,22 +78,9 @@
             <div class="closeShopping">Close</div>
         </div>
     </div>
-
+</section>
     <script src="js/cart.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".card").slice(0, 6).show();
-            $("#loadMore").on("click", function (e) {
-                e.preventDefault();
-                $(".card:hidden").slice(0, 6).slideDown();
-                if ($(".card:hidden").length == 0) {
-                    $("#loadMore").text(" ").addClass("noContent");
-                }
-            });
-
-        })
-    </script>
     <!-- ---------------------------------------------------------------------------------------------------------->
     <footer>
         <div class="footer-set">
@@ -116,9 +100,6 @@
                 <img class="media" src="images/pintrest.png" alt="">
             </div>
         </div>
-    </footer>
-    <script src="cart.js"></script>
-    <script src="store.js"></script>
-</body>
+    </footer></body>
 
 </html>

@@ -6,9 +6,12 @@ body {
 
 header {
     margin: 0;
-    float: 10;
+    /* float: 10; */
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    width: 100%;
 }
 
 footer {
@@ -19,20 +22,25 @@ footer {
 
 .footer-set {
     display: flex;
+    margin: auto;
 }
 
 .footer-m {
     display: flex;
     justify-content: space-around;
-    margin-left: 15rem;
+    margin: auto;
+    margin-right: 8rem;
     margin-top: 2rem;
 }
 
 .navbar-f {
     display: inline;
-    padding: 20px;
+    padding: 25px;
     font-weight: normal;
     color: #000000;
+}
+.navbar-f:hover{
+    text-decoration: underline;
 }
 
 .icons-footer {
@@ -45,6 +53,9 @@ footer {
     padding: 15px;
     font-weight: bold;
     color: #000000;
+}
+.navbar-h:hover{
+    text-decoration: underline;
 }
 
 .menu {
@@ -181,6 +192,7 @@ input {
 
 .offers {
     margin: auto;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
 }
@@ -244,6 +256,7 @@ input {
     margin: 4rem;
     margin-top: 7.4rem;
     color: #000000;
+    text-decoration: underline;
 }
 
 .top-bestseller {
@@ -262,12 +275,6 @@ input {
 .shop {
     color: #7EB693;
     font-family: 'Allura', cursive;
-}
-
-.card {
-    width: 20%;
-    background-color: #F9F8F8;
-    border-radius: 20px;
 }
 
 .card-best{
@@ -304,8 +311,13 @@ hr {
 
 .cart-img {
     margin-top: 1.2rem;
+    cursor: pointer;
 }
-
+.cart-img:hover{
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+}
 .product-icons {
     display: flex;
     justify-content: space-between;
@@ -315,13 +327,15 @@ hr {
     display: flex;
     flex-wrap: wrap;
     margin-left: 12rem;
-    width: 82%;
+    width: 90%;
 }
 
 .card {
-    width: 250px;
     margin: 0 2rem 2rem 2rem;
     padding: 1rem 2rem 0 2rem;
+    width: 70%;
+    background-color: #F9F8F8;
+    border-radius: 20px;
 }
 .bestsellers {
     margin-bottom: 5rem;
@@ -445,4 +459,8 @@ hr {
 }
 a{
     text-decoration: none;
+}
+.all{
+    padding: auto;
+    padding-top: 3rem;
 }
