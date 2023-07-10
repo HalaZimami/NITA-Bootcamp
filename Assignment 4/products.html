@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,115 +13,76 @@
         href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
         rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="loadMore.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loadMore.css">
+    <link rel="stylesheet" href="css/cart.css">
 
     <title>Document</title>
 </head>
 
 <body>
-    <!-- <header>
-        <img class="logo" src="Logo.png" alt="logo" width="300px" width="318" height="83">
-        <nav class="menu">
-            <ul>
-                <a href="home.html">
-                    <li class="navbar-h">Home</li>
-                </a>
-                <li class="navbar-h">Shop</li>
-                <li class="navbar-h">Services</li>
-            </ul>
-        </nav>
-
-        <div class="icons">
-            <div class="search">
-                <input type="search" placeholder="  search">
-                <img src="search.png" alt="search" class="searchimg">
-            </div>
-
-            <div class="icons2">
-                <a href="cart.html">
-                    <div class="cart shopping">
-                        <img class="cartimg" src="cart.png" alt="cart" width="33" height="33">
-                        <span class="quantity">0</span>
-                    </div>
-                </a>
-                <div class="profile" width="113" height="20px">
-                    <img src="profile.png" alt="cart" width="38" height="38">
-                    <p class="pheader">Profile</p>
-                </div>
-            </div>
-        </div>
-    </header> -->
     <header>
-        <img class="logo" src="Logo.png" alt="logo" width="300px" width="318" height="83">
+        <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
         <nav class="menu">
             <ul class="navbat">
                 <ul>
-                    <a href="home.html"><li class="navbar-h">Home</li></a>
-                    <a href="products.html"><li class="navbar-h">Shop</li></a>
+                    <a href="home.html">
+                        <li class="navbar-h">Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li class="navbar-h">Shop</li>
+                    </a>
                     <li class="navbar-h">Services</li>
-            </ul>
+                </ul>
         </nav>
         <div class="icons">
 
             <div class="search">
                 <input type="search" placeholder="  search">
-                <img src="search.png" alt="search" class="searchimg">
+                <img src="images/search.png" alt="search" class="searchimg">
             </div>
 
             <div class="icons2">
-                <a href="cart.html"><div class="cart">
-                    <img class="cartimg" src="cart.png" alt="cart" width="33" height="33">
-                    <p class="pheader">Cart(0)
-                    </p>
-                </div></a>
+                    <div class="cart shopping">
+                        <img class="cartimg" src="images/cart.png" alt="cart" width="33" height="33">
+                        <p class="pheader">Cart(<span class="quantity">0</span>)
+                        </p>
+                    </div>
                 <div class="profile" width="113" height="20px">
-                    <img src="profile.png" alt="cart" width="38" height="38">
+                    <img src="images/profile.png" alt="cart" width="38" height="38">
                     <p class="pheader">Profile</p>
                 </div>
             </div>
         </div>
     </header>
     <!-- ---------------------------------------------------------------------------------------------------------->
-    <!--     
-    <div class="container">
-            <p class="title-products"><span class="shop">Shop</span><br> Our BestSeller</p>
-            <div class="card">
-                <div class="product-icons">
-                    <img class="stars-products" src="Star-products.png" alt="reviews">
-                    <img class="empty-heart" src="empty-heart.png" alt="empty-heart">
-                </div>
-                <img src="product.png" alt="product" style="width:100%">
-                <div class="content">
-                    <p class="product-name">Arabica Coffee Beans</p>
-                    <hr>
-                    <div class="card-footer">
-                        <p class="price"><span
-                                style="color: rgba(128, 128, 128, 0.548); text-decoration: line-through;">$20
-                            </span>$13
-                        </p>
-                        <img class="cart-img" src="carts.png" alt="cart" width="30px" height="30px">
-                    </div>
-                </div>
-            </div>
+    <section>
+        <div class="container">
+            <p class="title-products"><span class="shop">Shop</span><br>All products</p>
 
+            <div class="list cards">
+
+            </div>
         </div>
 
-    </div> -->
 
 
-    <div class="container">
-        <p class="title-products"><span class="shop">Shop</span><br>All products</p>
+        <a href="#" id="loadMore">Load More</a>
 
-        <div class="list cards">
+    </section>
 
+    <div class="cart-c">
+        <h1>Card</h1>
+        <ul class="listCard">
+            
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
         </div>
     </div>
 
-
-
-    <a href="#" id="loadMore">Load More</a>
-
-    </section>
+    <script src="js/cart.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -138,10 +98,9 @@
         })
     </script>
     <!-- ---------------------------------------------------------------------------------------------------------->
-
     <footer>
         <div class="footer-set">
-            <img class="footer-logo" src="footer-logo.png" alt="logo" height="100">
+            <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
             <nav class="footer-m">
                 <ul class="navbar">
                     <li class="navbar-f">About Us</li>
@@ -151,14 +110,15 @@
             </nav>
 
             <div class="icons-footer">
-                <img class="media" src="instagram.png" alt="">
-                <img class="media" src="facebook.png" alt="">
-                <img class="media" src="twitter.png" alt="">
-                <img class="media" src="pintrest.png" alt="">
+                <img class="media" src="images/instagram.png" alt="">
+                <img class="media" src="images/facebook.png" alt="">
+                <img class="media" src="images/twitter.png" alt="">
+                <img class="media" src="images/pintrest.png" alt="">
             </div>
         </div>
     </footer>
     <script src="cart.js"></script>
+    <script src="store.js"></script>
 </body>
 
 </html>
