@@ -1,0 +1,18 @@
+.contain{
+    background-color: #F9F8F8;
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+.services-p{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #274C5B;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+.grow{
+    color: #7EB693;
+    font-family: 'Allura', cursive;
+}

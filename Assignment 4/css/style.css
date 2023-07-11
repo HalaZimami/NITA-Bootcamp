@@ -132,13 +132,17 @@ input {
     display: grid;
     grid-template-columns: auto auto;
 }
-
+.welcome{
+    width: 100%;
+    margin-top: 3rem;
+}
 .topimg {
     width: 100%;
+    height: 780px;
 }
 
 .wlcm-content {
-    margin: 12%;
+    margin: 13%;
 }
 
 .hparagraph {
@@ -168,6 +172,10 @@ input {
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
     margin-top: -20px;
+}
+
+button{
+    cursor: pointer;
 }
 
 .button-signup {}
@@ -328,7 +336,7 @@ hr {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: 15%;
     width: 80%;
     padding: 10px;
 }
@@ -389,7 +397,7 @@ hr {
 
 .img3 {
     margin-bottom: 4rem;
-    margin-left: 47rem;
+    margin-left: 49.3%;
 }
 
 .features {

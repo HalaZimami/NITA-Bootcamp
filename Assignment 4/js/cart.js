@@ -192,9 +192,11 @@ function initApp() {
             <img src="images/${value.reviews}">
             <img src="images/${value.fav}">
             </div>
+            <a href="singleProduct.html">
             <img class="shop-item-image" src="images/${value.image}" alt="product" style="width:100%">
             <div class="content">
             <p class="product-name title">${value.name}</p>
+            </a>
             <hr>
             <div class="card-footer">
             <p class="price"><span style="color: rgba(128, 128, 128, 0.548); text-decoration: line-through;">$20 

@@ -4,7 +4,7 @@
 }
 .up{
     display: flex;
-    margin-right: 3rem;
+    margin-right: 7rem;
 }
 .images{
     display: flex;
@@ -26,7 +26,7 @@
     border-radius: 30px;
     width: 165px;
     margin: 0.2rem 0;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 .rightImage{
     background-color: #F9F8F8;
@@ -65,57 +65,38 @@
     margin-top: -1.5rem;
     margin-bottom: -1rem;
 }
-body {
-    font-family: sans-serif;
-}
 div#topUploadDocumentation {
-    margin:3rem 9rem;
+    margin:3rem 13rem;
     width: 45%;
 }
 h2 {
-    text-align: center;
     border-bottom: solid 2px #222;
     color: #222;
     font-size: 28px;
 }
 .d-name{
     margin: 0;
-    color: #000000;
     font-size: 1rem;
-    background: #dbdbdb00;
-    border-radius: 10px;
-}
-h4 {
-    color: #ffffff;
-    margin: 0;
 }
 section.details p {
     font-size: 1rem;
     color: #525C60;
-    margin-top: -1rem;
     margin-top: 0.2rem;
 }
 section.details {
     margin: 0;
     background: #efefef00;
-    border-radius: 0 0 10px 10px;
     padding: 15px;
     top: -29px;
     position: relative;
 }
-section.attributeDocumentation > h3.active {
-    border-radius: 10px 10px 0 0;
-}
 section.attributeDocumentation > h3:hover {
     cursor: pointer;
 }
-div#topUploadDocumentation > section {
-    margin: 0;
-}
 section.attributeDocumentation > span {
     position: relative;
-    top: -40px;
-    left: 95%;
+    top: -26px;
+    left: 13%;
     margin: 0;
     font-size: 24px;
     transition: all 1s ease;
