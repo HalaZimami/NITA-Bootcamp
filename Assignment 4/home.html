@@ -77,23 +77,23 @@
 
             <p class="categories-1">What We Offer For You</p>
 
-            <div class="catigories-2">
+            <a href="arabica.html"><div class="catigories-2">
                 <div class="catigory1 catigory">
                     <img src="images/arabica.png" alt="">
                     <p class="c-paragraph">Arabica Coffee <br> Beans</p>
-                </div>
-                <div class="catigory2 catigory">
+                </div></a>
+                <a href="robusta.html"><div class="catigory2 catigory">
                     <img src="images/robusta.png" alt="">
                     <p class="c-paragraph">Robusta Coffee <br> Beans</p>
-                </div>
-                <div class="catigory3 catigory">
+                </div></a>
+                <a href="liberica.html"><div class="catigory3 catigory">
                     <img src="images/liberica.png" alt="">
                     <p class="c-paragraph">Liberica Coffee <br> Beans</p>
-                </div>
-                <div class="catigory4 catigory">
+                </div></a>
+                <a href="excelsa.html"><div class="catigory4 catigory">
                     <img src="images/excelsa.png" alt="">
                     <p class="c-paragraph">excelsa Coffee <br> Beans</p>
-                </div>
+                </div></a>
             </div>
 
         </div>
@@ -102,7 +102,7 @@
 
         <section>
             
-                <div class="bestsellers">
+                <div class="bestsellers container">
                     <div class="top-bestseller">
                         <a href="products.html"><p class="all-products">Shop all products</p></a>
                 <p class="title-bestsellers"><span class="shop">Shop</span><br>Our Bestsellers</p>
@@ -117,7 +117,7 @@
         </section>
     
         <div class="cart-c">
-            <h1>Card</h1>
+            <h1>Cart</h1>
             <ul class="listCard">
                 
             </ul>
@@ -128,19 +128,19 @@
         </div>
     
         <script src="js/cart.js"></script>
-    
+
         <script>
             $(document).ready(function () {
-                $(".card").slice(0, 8).show();
-                $("#loadMore").on("click", function (e) {
-                    e.preventDefault();
-                    $(".card:hidden").slice(0, 8).slideDown();
-                    if ($(".card:hidden").length == 0) {
-                        $("#loadMore").text(" ").addClass("noContent");
-                    }
-                });
-    
-            })
+            $(".card").slice(0, 6).show();
+            $("#loadMore").on("click", function (e) {
+                e.preventDefault();
+                $(".card:hidden").slice(0, 6).slideDown();
+                if ($(".card:hidden").length === 0) {
+                    $("#loadMore").text(" ").addClass("noContent");
+                }
+            });
+        
+        })
         </script>
 
     <!-- ---------------------------------------------------------------------------------------------------------->
@@ -172,7 +172,7 @@
                 <p class="p-sub">Subscribe to our Newsletter</p>
                 <div class="form-sub">
                     <input type="text" class="input-sub" placeholder="  Your Email Address">
-                    <button class="button-sub">Subscribe</button>
+                    <button class="button-">Subscribe</button>
                 </div>
             </div>
         </div>

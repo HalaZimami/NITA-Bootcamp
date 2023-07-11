@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,20 +12,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/loadMore.css">
+        <link rel="stylesheet" href="css/cart.css">
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318">
+        <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
         <nav class="menu">
             <ul class="navbat">
                 <ul>
                     <a href="home.html">
                         <li class="navbar-h">Home</li>
                     </a>
-                    <li class="navbar-h">Shop</li>
+                    <a href="products.html">
+                        <li class="navbar-h">Shop</li>
+                    </a>
                     <li class="navbar-h">Services</li>
                 </ul>
         </nav>
@@ -38,11 +43,11 @@
             </div>
 
             <div class="icons2">
-                <div class="cart">
-                    <img class="cartimg" src="images/cart.png" alt="cart" width="33" height="33">
-                    <p class="pheader">Cart(0)
-                    </p>
-                </div>
+                    <div class="cart shopping">
+                        <img class="cartimg" src="images/cart.png" alt="cart" width="33" height="33">
+                        <p class="pheader">Cart(<span class="quantity">0</span>)
+                        </p>
+                    </div>
                 <div class="profile" width="113" height="20px">
                     <img src="images/profile.png" alt="cart" width="38" height="38">
                     <p class="pheader">Profile</p>
@@ -51,26 +56,59 @@
         </div>
     </header>
     <br>
-    <br>
-    <br>
-    <br>
     <!-- ---------------------------------------------------------------------------------------------------------->
-    <section class="welcome">
-        <div class="topimg"
-            style="background-image: url('images/head-img.png'); background-repeat: no-repeat; height: 665px;">
-            <br>
-            <div class="wlcm-content">
-                <p class="hparagraph">Enjoy the taste</p>
-                <p class="phb">Your Focus Deserves Our best Coffee!</p>
-                <form action="home.html">
-                <button class="button-signup">Sign Up</button>
-                <button class="button-signin">Sign In</button>
-                </form>
+    <section class="all">
+        <div class="container">
+            <div class="top-bestseller">
+                <a href="products.html"><p class="all-products">All products</p></a>
+        <p class="title-bestsellers"><span class="shop">Shop</span><br>Robusta Coffee Beans</p>
+        
+    </div>
+            <div class="list cards">
+
+            </div>
+        </div>    
+
+    <div class="cart-c">
+        <h1>Cart</h1>
+        <ul class="listCard">
+            
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+</section>
+    <script src="js/Robusta.js"></script>
+    <script>
+        $(document).ready(function () {
+        $(".card").slice(0, 6).show();
+        $("#loadMore").on("click", function (e) {
+            e.preventDefault();
+            $(".card:hidden").slice(0, 6).slideDown();
+            if ($(".card:hidden").length === 0) {
+                $("#loadMore").text(" ").addClass("noContent");
+            }
+        });
+    
+    })
+    </script>
+
+    <!-- ---------------------------------------------------------------------------------------------------------->
+
+    <div class="sub">
+        <div class="sub-photo" style="background-image: url('images/footer.png');">
+            <p class="p-sub">Subscribe to our Newsletter</p>
+            <div class="form-sub">
+                <input type="text" class="input-sub" placeholder="  Your Email Address">
+                <button class="button-">Subscribe</button>
             </div>
         </div>
-    </section>
-    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    </div>
+</section>
 
+<!-- ---------------------------------------------------------------------------------------------------------- -->
     <footer>
         <div class="footer-set">
             <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
@@ -89,8 +127,6 @@
                 <img class="media" src="images/pintrest.png" alt="">
             </div>
         </div>
-    </footer>
-
-</body>
+    </footer></body>
 
 </html>

@@ -1,3 +1,15 @@
+$(document).ready(function () {
+    $(".card").slice(0, 6).show();
+    $("#loadMore").on("click", function (e) {
+        e.preventDefault();
+        $(".card:hidden").slice(0, 6).slideDown();
+        if ($(".card:hidden").length === 0) {
+            $("#loadMore").text(" ").addClass("noContent");
+        }
+    });
+
+})
+
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let body = document.querySelector('body');
@@ -182,11 +194,14 @@ let products = [
 ];
 
 let listCards = [];
-function initApp() {
+
+function init2() {
     products.forEach((value, key) => {
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('item');
-        newDiv.innerHTML = `
+        if (value.type === "liberica") {
+            console.log(value)
+            let newDiv = document.createElement('div');
+            newDiv.classList.add('item');
+            newDiv.innerHTML = `
         <div class="card">
         <div class="product-icons">
             <img src="images/${value.reviews}">
@@ -203,11 +218,13 @@ function initApp() {
             </div>
             </div>
             </div>`
-            ;
-        list.appendChild(newDiv);
+                ;
+            list.appendChild(newDiv);
+        }
+
     })
 }
-initApp();
+init2();
 
 function addToCard(key) {
     if (listCards[key] == null) {

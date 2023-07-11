@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+* {
+    outline: none;
+}
+
 header {
     margin: 0;
     /* float: 10; */
@@ -39,7 +43,8 @@ footer {
     font-weight: normal;
     color: #000000;
 }
-.navbar-f:hover{
+
+.navbar-f:hover {
     text-decoration: underline;
 }
 
@@ -54,7 +59,8 @@ footer {
     font-weight: bold;
     color: #000000;
 }
-.navbar-h:hover{
+
+.navbar-h:hover {
     text-decoration: underline;
 }
 
@@ -128,8 +134,11 @@ input {
 }
 
 .topimg {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+}
+
+.wlcm-content {
+    margin: 12%;
 }
 
 .hparagraph {
@@ -137,17 +146,14 @@ input {
     font-weight: bold;
     font-size: 35px;
     color: #7EB693;
-    position: absolute;
-    top: 260px;
-    left: 300px;
 }
 
 .phb {
     font-weight: bolder;
     font-size: 60px;
-    position: absolute;
-    top: 290px;
-    left: 300px;
+    color: #6C584C;
+    width: 50%;
+    margin-top: -20px;
 }
 
 .button-signup,
@@ -161,19 +167,12 @@ input {
     border: none;
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -20px;
 }
 
-.button-signup {
-    position: absolute;
-    top: 510px;
-    left: 19rem;
-}
+.button-signup {}
 
-.button-signin {
-    position: absolute;
-    top: 510px;
-    left: 33rem;
-}
+.button-signin {}
 
 /* section::after {
     content: "";
@@ -249,6 +248,7 @@ input {
 
 .catigory {
     padding: 1rem;
+    color: black;
 }
 
 .all-products {
@@ -277,7 +277,7 @@ input {
     font-family: 'Allura', cursive;
 }
 
-.card-best{
+.card-best {
     width: 20%;
     background-color: #F9F8F8;
     border-radius: 20px;
@@ -294,8 +294,8 @@ input {
 }
 
 hr {
-    border-color: rgba(0, 0, 0, 0.088);
-    background-color: rgba(0, 0, 0, 0.088);
+    border-color: rgba(0, 0, 0, 0.026);
+    background-color: rgba(0, 0, 0, 0.026);
 }
 
 .price {
@@ -313,11 +313,13 @@ hr {
     margin-top: 1.2rem;
     cursor: pointer;
 }
-.cart-img:hover{
+
+.cart-img:hover {
     opacity: 0.5;
     width: 40px;
     height: 40px;
 }
+
 .product-icons {
     display: flex;
     justify-content: space-between;
@@ -326,8 +328,9 @@ hr {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 12rem;
-    width: 90%;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
 }
 
 .card {
@@ -337,8 +340,14 @@ hr {
     background-color: #F9F8F8;
     border-radius: 20px;
 }
+
 .bestsellers {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .comments {
@@ -417,7 +426,7 @@ hr {
     border: #000000;
 }
 
-.button-sub {
+.button- {
     width: 202px;
     height: 60px;
     background-color: #274C5B;
@@ -451,16 +460,21 @@ hr {
     color: #6C584C;
     text-align: center;
 }
-.title-products{
+
+.title-products {
     font-size: 2.9rem;
     font-weight: bold;
     color: #6C584C;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.all{
+
+.all {
     padding: auto;
     padding-top: 3rem;
 }
+
+/* ---------------------------------------------- */

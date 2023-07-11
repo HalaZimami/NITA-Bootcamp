@@ -8,7 +8,7 @@ body {
     top: 0;
     left: 100%;
     width: 500px;
-    background-color: #453E3B;
+    background-color: white;
     height: 100vh;
     transition: 0.5s;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .cart-c h1 {
-    color: white;
+    color: black;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -42,7 +42,7 @@ body {
 
 .cart-c .checkOut div {
     background-color: #7EB693;
-    color: white;
+    color: black;
     width: 100%;
     height: 70px;
     display: flex;
@@ -54,13 +54,13 @@ body {
 
 .carcart-ct .checkOut div:nth-child(2) {
     background-color: #1C1F25;
-    color: #fff;
+    color: black;
 }
 
 .listCard li {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
+    color: black;
     row-gap: 10px;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .listCard li button {
-    background-color: #fff5;
+    background-color: rgba(0, 0, 0, 0.971);
     border: none;
 }
 
@@ -86,7 +86,7 @@ body {
 .listCard li {
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
+    color: black;
     row-gap: 10px;
 }
 
@@ -101,23 +101,12 @@ body {
 }
 
 .listCard li button {
-    background-color: #fff5;
+    background-color: #6c584c1d;
     border: none;
 }
 
 .listCard .count {
     margin: 0 10px;
-}
-
-.card .checkOut div {
-    background-color: #E8BC0E;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .card .checkOut div:nth-child(2) {
