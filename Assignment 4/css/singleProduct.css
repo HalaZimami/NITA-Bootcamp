@@ -53,7 +53,7 @@
 }
 .s-desc{
     font-size: 1.4rem;
-    color: #525C60;
+    color: #525c60c5;
     margin-top: -1rem;
 }
 .p-name{
@@ -105,9 +105,6 @@ section.attributeDocumentation > span {
     display: none;
     transition: all 1s ease;
 }
-.recommends{
-    padding: 2.5rem;
-}
 .rec-title{
     font-size: 2.5rem;
     font-weight: bold;
@@ -115,4 +112,7 @@ section.attributeDocumentation > span {
 }
 hr{
     margin-top: -1rem;
+}
+.hrfooter{
+    margin-top: 2rem;
 }

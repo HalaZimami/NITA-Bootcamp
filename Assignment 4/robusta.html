@@ -32,13 +32,13 @@
                     <a href="products.html">
                         <li class="navbar-h">Shop</li>
                     </a>
-                    <li class="navbar-h">Services</li>
+                    <a href="services.html"><li class="navbar-h">Services</li></a>
                 </ul>
         </nav>
         <div class="icons">
 
             <div class="search">
-                <input type="search" placeholder="  search">
+                <input class="search-input" type="search" placeholder="  search">
                 <img src="images/search.png" alt="search" class="searchimg">
             </div>
 
@@ -83,10 +83,10 @@
     <script src="js/Robusta.js"></script>
     <script>
         $(document).ready(function () {
-        $(".card").slice(0, 6).show();
+        $(".card").slice(0, 8).show();
         $("#loadMore").on("click", function (e) {
             e.preventDefault();
-            $(".card:hidden").slice(0, 6).slideDown();
+            $(".card:hidden").slice(0, 8).slideDown();
             if ($(".card:hidden").length === 0) {
                 $("#loadMore").text(" ").addClass("noContent");
             }
@@ -115,7 +115,7 @@
             <nav class="footer-m">
                 <ul class="navbar">
                     <li class="navbar-f">About Us</li>
-                    <li class="navbar-f">Contact Us</li>
+                    <a href="contactUs.html"><li class="navbar-f">Contact Us</li></a>
                     <li class="navbar-f">Policy & Privacy</li>
                 </ul>
             </nav>

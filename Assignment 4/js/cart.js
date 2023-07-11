@@ -5,7 +5,6 @@ let list = document.querySelector('.list');
 let listCard = document.querySelector('.listCard');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
-
 openShopping.addEventListener('click', () => {
     body.classList.add('active');
 })
@@ -17,15 +16,17 @@ closeShopping.addEventListener('click', () => {
 let products = [
     {
         id: "One",
+        number: 1,
         type: "arabica",
         reviews: 'Star-products.png',
-        fav: 'empty-heart.png',
+        fav: 'red-heart.png',
         name: 'Arabica Coffee Beans #1',
         image: 'product.png',
         price: 13
     },
     {
         id: "Tow",
+        number: 2,
         type: "robusta",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -35,9 +36,10 @@ let products = [
     },
     {
         id: "Three",
+        number: 3,
         type: "arabica",
         reviews: 'Star-products.png',
-        fav: 'empty-heart.png',
+        fav: 'red-heart.png',
         name: 'Arabica Coffee Beans #3',
         image: 'product.png',
         price: 13
@@ -45,6 +47,7 @@ let products = [
     ,
     {
         id: "Four",
+        number: 4,
         type: "robusta",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -54,6 +57,7 @@ let products = [
     },
     {
         id: "Five",
+        number: 5,
         type: "excelsa",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -63,6 +67,7 @@ let products = [
     },
     {
         id: "Six",
+        number: 6,
         type: "excelsa",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -72,15 +77,17 @@ let products = [
     },
     {
         id: "Seven",
+        number: 7,
         type: "arabica",
         reviews: 'Star-products.png',
-        fav: 'empty-heart.png',
+        fav: 'red-heart.png',
         name: 'Arabica Coffee Beans #7',
         image: 'product.png',
         price: 13
     },
     {
         id: "Eight",
+        number: 8,
         type: "liberica",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -91,6 +98,7 @@ let products = [
     ,
     {
         id: "Nine",
+        number: 9,
         type: "robusta",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -100,15 +108,17 @@ let products = [
     },
     {
         id: "Ten",
+        number: 10,
         type: "arabica",
         reviews: 'Star-products.png',
-        fav: 'empty-heart.png',
+        fav: 'red-heart.png',
         name: 'Arabica Coffee Beans #10',
         image: 'product.png',
         price: 13
     },
     {
         id: "Eleven",
+        number: 11,
         type: "liberica",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -118,6 +128,7 @@ let products = [
     },
     {
         id: "Twelve",
+        number: 12,
         type: "excelsa",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -127,6 +138,7 @@ let products = [
     },
     {
         id: "Thirteen",
+        number: 13,
         type: "arabica",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -136,6 +148,7 @@ let products = [
     },
     {
         id: "Fourteen",
+        number: 14,
         type: "robusta",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -145,6 +158,7 @@ let products = [
     },
     {
         id: "Fifteen",
+        number: 15,
         type: "excelsa",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -154,6 +168,7 @@ let products = [
     },
     {
         id: "Sixteen",
+        number: 16,
         type: "robusta",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -163,6 +178,7 @@ let products = [
     },
     {
         id: "Seventeen",
+        number: 17,
         type: "liberica",
         reviews: 'Star-products.png',
         fav: 'empty-heart.png',
@@ -172,9 +188,10 @@ let products = [
     },
     {
         id: "Eighteen",
+        number: 18,
         type: "arabica",
         reviews: 'Star-products.png',
-        fav: 'empty-heart.png',
+        fav: 'red-heart.png',
         name: 'Arabica Coffee Beans #18',
         image: 'product.png',
         price: 13

@@ -40,7 +40,7 @@
         <div class="icons">
 
             <div class="search">
-                <input type="search" placeholder="  search">
+                <input class="search-input" type="search" placeholder="  search">
                 <img src="images/search.png" alt="search" class="searchimg">
             </div>
 
@@ -96,6 +96,10 @@
             </div>
         </div>
 
+        <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+
+
         <!-- ----------------------------- -->
 
         <div class="down">
@@ -146,10 +150,10 @@
 
         <script>
             $(document).ready(function () {
-                $(".card").slice(0, 3).show();
+                $(".card").slice(0, 4).show();
                 $("#loadMore").on("click", function (e) {
                     e.preventDefault();
-                    $(".card:hidden").slice(0, 3).slideDown();
+                    $(".card:hidden").slice(0, 4).slideDown();
                     if ($(".card:hidden").length === 0) {
                         $("#loadMore").text(" ").addClass("noContent");
                     }
@@ -195,7 +199,7 @@
             <nav class="footer-m">
                 <ul class="navbar">
                     <li class="navbar-f">About Us</li>
-                    <li class="navbar-f">Contact Us</li>
+                    <a href="contactUs.html"><li class="navbar-f">Contact Us</li></a>
                     <li class="navbar-f">Policy & Privacy</li>
                 </ul>
             </nav>
