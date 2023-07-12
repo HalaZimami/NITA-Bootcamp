@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+@media (max-width: 480px) { 
+    /* The hero image */ 
+  }
+
 .search-input{
     outline: none;
 }
@@ -12,6 +16,7 @@ header {
     margin: 0;
     /* float: 10; */
     display: flex;
+    flex-direction:row;
     justify-content: space-around;
     position: fixed;
     background-color: white;
