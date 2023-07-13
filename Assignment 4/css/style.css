@@ -3,20 +3,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
-@media (max-width: 480px) { 
-    /* The hero image */ 
-  }
-
 .search-input{
     outline: none;
 }
-
 header {
     margin: 0;
     /* float: 10; */
     display: flex;
-    flex-direction:row;
     justify-content: space-around;
     position: fixed;
     background-color: white;
@@ -384,9 +377,11 @@ hr {
 
 .comment-content {
     margin: auto;
+    margin-top: 5%;
     display: grid;
     text-align: center;
     height: 576px;
+    background-color: #274c5b25;
 }
 
 .img1,
@@ -490,3 +485,75 @@ a {
 }
 
 /* ---------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+    .offers{
+        flex-direction: column;
+    }
+    .ads{
+        width: 55%;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    .catigories-2{
+        flex-direction: column;
+        }
+        .features{
+            flex-direction: column;
+        }
+        .feature{
+            width: 40%;
+            margin-left: 30%;
+        }
+    .top-bestseller{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .title-bestsellers{
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
+        left: 16.5%;
+    }
+    .all-products{
+        margin-top: -2%;
+    }
+    .cards{
+        margin-left: 18%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .p-ads, .offer{
+        font-size: 2.5rem;
+    }
+    .catigories-2{
+        flex-direction: column;
+        }
+        .img3{
+            margin-left: 48%;
+        }
+        .feature{
+            width: 40%;
+            margin-left: 30%;
+        }
+        .features{
+            flex-direction: column;
+            text-align: center;
+        }
+        .top-bestseller{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+        .title-bestsellers{
+            font-size: 1.8rem;
+            text-align: center;
+            position: relative;
+            left: 30%;
+        }
+        .all-products{
+            margin-top: -2%;
+        }
+        .cards{
+            margin-left: 18%;
+        }
+}
