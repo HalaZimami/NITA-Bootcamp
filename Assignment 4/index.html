@@ -41,12 +41,12 @@
             </div>
 
             <div class="icons2">
-                <div class="cart shopping">
+                <div class="cart shopping" onclick="alert('Sign In!')">
                     <img class="cartimg" src="images/cart.png" alt="cart" width="33" height="33">
                     <p class="pheader">Cart(<span class="quantity">0</span>)
                     </p>
                 </div>
-                <div class="profile" width="113" height="20px">
+                <div class="profile" width="113" height="20px" onclick="alert('Sign In!')">
                     <img src="images/profile.png" alt="cart" width="38" height="38">
                     <p class="pheader">Profile</p>
                 </div>
@@ -83,9 +83,15 @@
             <div class="icons-footer">
                 <img class="media" src="images/instagram.png" alt="">
                 <img class="media" src="images/facebook.png" alt="">
-                <img class="media" src="images/twitter.png" alt="">
+                <img class="media" src="images/twitter.png" alt="" onclick="openWindow()">
                 <img class="media" src="images/pintrest.png" alt="">
             </div>
+            <script>
+                function openWindow(){
+                    var newWindow= window.open('https://twitter.com/' , 'google', 'width=800', 'height=600');
+                    newWindow.focus();
+                }
+            </script>
         </div>
     </footer>
 </body>
