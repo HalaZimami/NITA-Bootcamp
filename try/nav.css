@@ -30,7 +30,7 @@
     display: flex;
     margin-top: 10%;
   }
-  .blue{
+  .red{
     width: 18px;
     height: 18px;
     background-color: rgb(200, 15, 15);
@@ -40,6 +40,9 @@
     position: relative;
     right: 30%;
     bottom: 5%;
+  }
+  .cart-img{
+    margin-top: 4%;
   }
   
   .dropdown-content a:hover {background-color: #ddd;}
