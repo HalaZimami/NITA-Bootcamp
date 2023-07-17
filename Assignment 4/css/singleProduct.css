@@ -87,8 +87,6 @@ section.details {
     margin: 0;
     background: #efefef00;
     padding: 15px;
-    top: -29px;
-    position: relative;
 }
 section.attributeDocumentation > h3:hover {
     cursor: pointer;
@@ -96,7 +94,7 @@ section.attributeDocumentation > h3:hover {
 section.attributeDocumentation > span {
     position: relative;
     top: -26px;
-    left: 13%;
+    left: 50%;
     margin: 0;
     font-size: 24px;
     transition: all 1s ease;
@@ -106,7 +104,7 @@ section.attributeDocumentation > span {
     transition: all 1s ease;
 }
 .rec-title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 2rem;
 }
@@ -115,4 +113,21 @@ hr{
 }
 .hrfooter{
     margin-top: 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .up{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .leftImages{
+        display: none;
+    }
+    .r-image{
+        width: 100%;
+        margin-left: 5%;
+    }
+    div#topUploadDocumentation {
+        margin:1rem 1rem;
+        width: 45%;
+    }
 }

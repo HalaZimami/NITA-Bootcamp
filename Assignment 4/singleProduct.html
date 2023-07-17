@@ -24,9 +24,29 @@
 
 <body>
     <header>
-        <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
+        <div class="topnav">
+            <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
+            <div class="dropdown">
+                <div class="cart-dropdown shopping">
+                    <img class="cart-img" src="../Assignment 4/images/shopping-bag.png" alt="cart" width="35"
+                        height="35" />
+                    <!-- <p class="pheader">Cart(<span class="quantity">0</span>)</p> -->
+                    <div class="red">
+                    </div>
+                </div>
+                <button class="dropbtn">
+                    <img src="../Assignment 4/images/more.png" alt="" width="35" height="35" />
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Shop</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </div>
+        </div>
         <nav class="menu">
-            <ul class="navbat">
+            <ul class="navbar">
                 <ul>
                     <a href="home.html">
                         <li class="navbar-h">Home</li>
@@ -34,7 +54,9 @@
                     <a href="products.html">
                         <li class="navbar-h">Shop</li>
                     </a>
-                    <li class="navbar-h">Services</li>
+                    <a href="services.html">
+                        <li class="navbar-h">Services</li>
+                    </a>
                 </ul>
         </nav>
         <div class="icons">
@@ -50,11 +72,11 @@
                     <p class="pheader">Cart(<span class="quantity">0</span>)
                     </p>
                 </div>
-                <div class="profile" width="113" height="20px">
-                    <img src="images/profile.png" alt="cart" width="38" height="38">
-                    <p class="pheader">Profile</p>
-                </div>
+            <div class="profile" width="113" height="20px">
+                <img src="images/profile.png" alt="cart" width="38" height="38">
+                <p class="pheader">Profile</p>
             </div>
+        </div>
         </div>
     </header>
     <br>
@@ -95,13 +117,7 @@
                 <button class="button-">Add To Cart</button>
             </div>
         </div>
-
-        <!-- ---------------------------------------------------------------------------------------------------------- -->
-
-
-
         <!-- ----------------------------- -->
-
         <div class="down">
             <div id="topUploadDocumentation">
                 <section class="attributeDocumentation">
@@ -143,7 +159,6 @@
         <div class="list cards">
 
         </div>
-        <hr>
     </section>
 
     <section>
@@ -199,7 +214,9 @@
             <nav class="footer-m">
                 <ul class="navbar">
                     <li class="navbar-f">About Us</li>
-                    <a href="contactUs.html"><li class="navbar-f">Contact Us</li></a>
+                    <a href="contactUs.html">
+                        <li class="navbar-f">Contact Us</li>
+                    </a>
                     <li class="navbar-f">Policy & Privacy</li>
                 </ul>
             </nav>
@@ -211,6 +228,9 @@
                 <img class="media" src="images/pintrest.png" alt="">
             </div>
         </div>
+        <p class="rights">
+            © CoffeeBeans.com, Inc. All rights reserved.
+        </p>
     </footer>
 
 </body>

@@ -196,7 +196,7 @@ textarea {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     .section1 {
         margin-top: 15%;
         width: 100%;
@@ -299,25 +299,26 @@ textarea {
     #message {
         width: 96%;
     }
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .section1 {
         margin-top: 22%;
-        width: 100%;
         flex-direction: column;
         margin-left: 4%;
     }
 
     .contact,
-    .contact-title,
-    .contact-p {
-        text-align: center;
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-p{
+        font-size: 1rem;
     }
 
     .coffee-img {
-        margin: auto;
-        width: 87%;
+        width: 90%;
     }
 
     .background {
@@ -352,8 +353,18 @@ textarea {
     .box-info {
         margin-left: 5%;
     }
+    .location-top, .loc-title{
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .box-body, .loc-p{
+        font-size: 1rem;
+    }
+    .location-bg{
+        height: 500px;
+    }
 }
-
+/* 
 @media only screen and (max-width: 1550px) {
     div .form-con {
         flex-direction: column;
@@ -370,4 +381,4 @@ textarea {
     #message {
         width: 96%;
     }
-}
+} */

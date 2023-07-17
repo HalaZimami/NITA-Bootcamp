@@ -26,14 +26,13 @@ footer {
 
 .footer-set {
     display: flex;
-    margin: auto;
 }
 
 .footer-m {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    margin-right: 8rem;
+    margin-left: 28.5%;
     margin-top: 2rem;
 }
 
@@ -41,7 +40,7 @@ footer {
     display: inline;
     padding: 25px;
     font-weight: normal;
-    color: #000000;
+    color: #000000b3;
 }
 
 .navbar-f:hover {
@@ -52,7 +51,11 @@ footer {
     margin-left: 20rem;
     margin-top: 1.5rem;
 }
-
+.rights{
+    text-align: center;
+    font-size: 1.4;
+    color: #000000b3;
+}
 .navbar-h {
     display: inline;
     padding: 15px;
@@ -150,13 +153,13 @@ input {
 .hparagraph {
     font-family: 'Allura', cursive;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 2.9rem;
     color: #7EB693;
 }
 
 .phb {
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 2.9rem;
     color: #6C584C;
     width: 50%;
     margin-top: -20px;
@@ -241,7 +244,7 @@ button {
 }
 
 .categories-1 {
-    font-size: 2.9rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #274C5B;
     padding-top: 3rem;
@@ -389,8 +392,7 @@ hr {
 }
 
 .img1,
-.img2,
-.img3 {
+.img2{
     margin: auto;
 }
 
@@ -414,12 +416,12 @@ hr {
 }
 
 .sub {
-    margin: 5rem;
+    margin: 3rem;
 }
 
 .sub-photo {
     margin: auto;
-    width: 1086px;
+    width: 68%;
     height: 273.46px;
     border: 1px solid black;
     border-radius: 90px;
@@ -429,7 +431,7 @@ hr {
 
 .p-sub {
     font-weight: bold;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     color: white;
     width: 25%;
     margin: 3rem;
@@ -551,10 +553,28 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    .offers {
+        flex-direction: column;
+    }
+
+    .ads {
+        width: 100%;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        margin: auto;
+        height: 180px;
+    }
+    .catigories-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 1rem;
+    }
+    .catigory img{
+        width: 80%;
+    }
     .menu {
         display: none;
     }
-
     .icons {
         display: none;
     }
@@ -569,10 +589,159 @@ a {
         visibility: visible;
         margin-top: 5%;
     }
+    .logo{
+        width: 200px;
+        height: 80px;
+    }
+    .topnav{
+        justify-content: space-between;
+    }
+    .p-ads,
+    .offer {
+        font-size: 2rem;
+    }
+
+    .img3 {
+        margin-left: 48%;
+    }
+
+    .features img {
+        width: 96%;
+        padding: 0;
+    }
+    .features {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .top-bestseller {
+        flex-direction: column-reverse;
+    }
+    .title-bestsellers{
+        font-size: 1.4rem;
+        /* white-space:nowrap; */
+        margin-bottom: 5%;
+        width: 100%;
+        margin-right: 0;
+    }
+    .title-products{
+        font-size: 2rem;
+    }
+    .shop{
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+    }
+
+    .all-products {
+        font-size: 1rem;
+        text-align: center;
+        margin-top:0;
+        margin: 0;
+    }  
+    /* .card {
+        margin-bottom:2%;
+        padding: 1rem 2rem 0 2rem;
+        width: 75%;
+        background-color: #F9F8F8;
+        border-radius: 20px;
+    } */
+    .comments {
+        font-size: 2rem;
+    }
+
+    .comment-p {
+        font-size: 1rem;
+    }
+
+    .categories-1 {
+        font-size: 2rem;
+    }
+    .sub{
+        display: none;
+    }
+    .comments {
+        font-size: 2rem;
+    }
+    
+    .comment-p {
+        font-size: 1rem;
+        margin: auto;
+    }
+    
+    .reviewer {
+        font-size: 1rem;
+        margin-left:0;
+    }
+    .img3{
+        margin:auto;
+        margin-bottom: 6%;
+    }
+    .img1{
+        width: 20%;
+    }
+    .comment-content{
+        height: 400px;
+    }
+    .footer-logo{
+        display: none;
+    }
+    .footer-set{
+        flex-direction: column;
+    }
+    .footer-m {
+        width: 90%;
+        margin: auto;
+        white-space: nowrap;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .navbar-f{
+        font-size: 1rem;
+    }
+    .icons-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-left: 0;
+        margin-top:0;
+    }
+    .media{
+        width: 12%;
+    }
+    .rights{
+        font-size: 1rem;
+    }
+    .hparagraph {
+        font-size: 2rem;
+    }
+    
+    .phb {
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .button-signup,
+    .button-signin {
+        margin-bottom: 12%;
+    }
+    .wlcm-content .but{
+        margin-top: 15%;
+    }
+    .wlcm-content{
+        margin-top: 30%;
+    }
+    .topimg {
+        height: 650px;
+    }
 }
 
 /* ---------------------------------------------- */
-
+/* 
 @media only screen and (max-width: 1024px) {
     .offers {
         flex-direction: column;
@@ -603,7 +772,7 @@ a {
     }
 
     .title-bestsellers {
-        font-size: 1.8rem;
+        font-size: 2rem;
         white-space: nowrap;
         text-align: center;
         position: relative;
@@ -637,7 +806,28 @@ a {
     .c-paragraph {
         font-size: 1rem;
     }
+    .menu {
+        display: none;
+    }
 
+    .icons {
+        display: none;
+    }
+
+    .logo-img {
+        width: 200px;
+        height: 90px;
+        margin-left: 0;
+    }
+
+    .dropdown {
+        visibility: visible;
+        margin-top: 5%;
+    }
+    .logo{
+        width: 200px;
+        height: 80px;
+    }
     /* .sub-photo{
         width: 100%;
     }
@@ -647,63 +837,4 @@ a {
     .sub-media{
         display:inline-block;
     } */
-}
-
-@media only screen and (max-width: 767px) {
-
-    .p-ads,
-    .offer {
-        font-size: 2rem;
-    }
-
-    .catigories-2 {
-        flex-direction: column;
-    }
-
-    .img3 {
-        margin-left: 48%;
-    }
-
-    .feature {
-        width: 50%;
-        margin-left: 20%;
-    }
-
-    .features {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .top-bestseller {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .title-bestsellers {
-        font-size: 1.8rem;
-        text-align: center;
-        position: relative;
-        left: 30%;
-    }
-
-    .all-products {
-        margin-top: -2%;
-        font-size: 1rem;
-    }
-
-    .cards {
-        margin-left: 10%;
-    }
-
-    .comments {
-        font-size: 2rem;
-    }
-
-    .comment-p {
-        font-size: 1rem;
-    }
-
-    .categories-1 {
-        font-size: 2rem;
-    }
-}
+} */
