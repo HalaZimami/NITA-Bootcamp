@@ -988,12 +988,10 @@ a {
     .topimg {
         height: 650px;
     }
-/* 
-    .cart-dropdown {
-        margin-top: 15%;
-    } */
-
     .dropdown {
         margin-top: -8%;
+    }
+    .icons2 {
+        width: 100%;
     }
 }

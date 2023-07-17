@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- //Header section -->
     <header>
         <div class="topnav">
             <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
@@ -75,8 +76,9 @@
         </div>
     </header>
     <br>
-    <!-- ---------------------------------------------------------------------------------------------------------->
+  <!------------------------------------------------------------------------------------------------------------>
 
+  <!-- //Single product section -->
     <section class="product-container">
 
         <div class="up">
@@ -112,7 +114,6 @@
                 <button class="button-">Add To Cart</button>
             </div>
         </div>
-        <!-- ----------------------------- -->
         <div class="down">
             <div id="topUploadDocumentation">
                 <section class="attributeDocumentation">
@@ -140,12 +141,11 @@
             </div>
         </div>
     </section>
-
-    <script src="js/singleProduct.js"></script>
     <br>
 
     <!-- ---------------------------------------------------------------------------------------------------------- -->
 
+    <!-- //Recommendations section -->
     <section class="recommends">
         <p class="rec-title">
             YOU MIGHT ALSO LIKE
@@ -155,9 +155,9 @@
 
         </div>
     </section>
-
-    <section>
-
+    <!------------------------------------------------------------------------------------------------------------>
+        
+        <!-- //Load more section -->
         <script>
             $(document).ready(function () {
                 $(".card").slice(0, 4).show();
@@ -171,25 +171,23 @@
 
             })
         </script>
-
+    
+    <!------------------------------------------------------------------------------------------------------------>
+        
+        <!-- //Cart section -->
         <div class="cart-c">
             <h1>Cart</h1>
             <ul class="listCard">
-
             </ul>
             <div class="checkOut">
                 <div class="total">0</div>
                 <div class="closeShopping">Close</div>
             </div>
         </div>
-
-        <script src="js/cart.js"></script>
         <br>
 
-
-
-        <!-- ---------------------------------------------------------------------------------------------------------- -->
-
+  <!------------------------------------------------------------------------------------------------------------>
+        <!-- //Email Subscribtion -->
         <div class="sub">
             <div class="sub-photo" style="background-image: url('images/footer.png');">
                 <p class="p-sub">Subscribe to our Newsletter</p>
@@ -201,8 +199,9 @@
         </div>
     </section>
 
-    <!-- ---------------------------------------------------------------------------------------------------------- -->
+  <!------------------------------------------------------------------------------------------------------------>
 
+  <!-- //Footer section -->
     <footer>
         <div class="footer-set">
             <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
@@ -228,6 +227,11 @@
         </p>
     </footer>
 
-</body>
+    <!------------------------------------------------------------------------------------------------------------>
 
+    <!-- //JavaScript files -->
+    <script src="js/singleProduct.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
 </html>
