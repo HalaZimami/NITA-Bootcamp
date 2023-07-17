@@ -7,7 +7,7 @@ body {
     position: fixed;
     top: 0;
     left: 100%;
-    width: 400px;
+    width: 500px;
     background-color: white;
     height: 100vh;
     transition: 0.5s;
@@ -59,7 +59,6 @@ body {
 
 .listCard li {
     display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
     color: black;
     row-gap: 10px;
 }
@@ -115,6 +114,6 @@ body {
 }
 @media screen and (max-width: 600px) {
     .active .cart-c {
-        left: calc(100% - 400px);
+        left: calc(110% - 450px);
     }
 }

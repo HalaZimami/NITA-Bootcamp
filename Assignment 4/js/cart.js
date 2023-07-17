@@ -213,13 +213,13 @@ function initApp() {
             <img class="shop-item-image" src="images/${value.image}" alt="product" style="width:100%">
             <div class="content">
             <p class="product-name title">${value.name}</p>
+            </div>
             </a>
             <hr>
             <div class="card-footer">
             <p class="price"><span style="color: rgba(128, 128, 128, 0.548); text-decoration: line-through;">$20 
             </span>$${value.price.toLocaleString()} </p>
-            <img class="cart-img" src="images/carts.png" onclick="addToCard(${key})" alt="cart" width="30px" height="30px">
-            </div>
+            <img class="card-img" src="images/carts.png" onclick="addToCard(${key})" alt="cart" width="30px" height="30px">
             </div>
             </div>`
             ;
